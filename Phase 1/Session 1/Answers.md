@@ -12,11 +12,13 @@ The number of times we train on the input image i.e. the number of times the mod
 
 <u>**1x1 convolution**</u>
 
-It can be used to decrease/increase the number of channels after the max pooling layer. Normally it used to decrease the number of channels.                                                                                                                                Eg (200x200x512) | (1x1x512x32) - (200x200x32)
+It can be used to decrease/increase the number of channels after the max pooling layer. Normally it used to decrease the number of channels.                                                                                                          
+Eg (200x200x512) | (1x1x512x32) - (200x200x32)
 
 <u>**3x3 convolution**</u>
 
-Convolution performed by 3x3 matrix(filter). Two 3x3 convolutions are preferred than doing one 5x5 convolution as number of parameters are less in two 3x3.(18 vs 25), also Nvidia has made 3x3 faster.                                                                                                                                                      Eg - 200x200x32 | 3x3x32x64
+Convolution performed by 3x3 matrix(filter). Two 3x3 convolutions are preferred than doing one 5x5 convolution as number of parameters are less in two 3x3.(18 vs 25), also Nvidia has made 3x3 faster.                                                                                                                                   
+Eg - 200x200x32 | 3x3x32x64
 
  <u>**Activation Function**</u>
 
@@ -28,6 +30,7 @@ A feature map for a layer is what the filters are highlighting for that image. T
 
  <u>**Receptive Field**</u>
 
-It is the number of pixels a particular layer is able to view. Types - global and local. Global- receptive field of the entire model from that layer. Local - receptive field of that layer locally.                                                         Eg : 244x244 | 3x3(Layer1) | 3x3(Layer2) | 3x3(Layer3). Global of layer2 - 5x5, local of layer2 - 3x3
+It is the number of pixels a particular layer is able to view. Types - global and local. Global- receptive field of the entire model from that layer. Local - receptive field of that layer locally.                                                         
+Eg : 244x244 | 3x3(Layer1) | 3x3(Layer2) | 3x3(Layer3). Global of layer2 - 5x5, local of layer2 - 3x3
 
  
